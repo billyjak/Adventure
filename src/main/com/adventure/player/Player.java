@@ -1,6 +1,12 @@
 package main.com.adventure.player;
 
 
+import main.com.adventure.items.attire.chest.LeatherVest;
+import main.com.adventure.items.attire.gloves.LeatherGloves;
+import main.com.adventure.items.attire.helmet.LeatherHelmet;
+import main.com.adventure.items.attire.legs.LeatherPants;
+import main.com.adventure.items.attire.shoes.LeatherShoes;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +23,18 @@ public class Player {
         this.hitpoints = hitpoints;
         this.inventory = inventory;
         this.equippedItems = equippedItems;
+    }
+    public Player() {
+    }
+
+    public static Player initializePlayer(String name) {
+        EquippedItems equippedItems = new EquippedItems();
+        equippedItems.setChest(LeatherVest.makeDefaultLeatherVest());
+        equippedItems.setLegs(LeatherPants.makeDefaultLeatherPants());
+        equippedItems.setGloves(LeatherGloves.makeDefaultLeatherGloves());
+        equippedItems.setHelmet(LeatherHelmet.makeDefaultLeatherHelmet());
+        equippedItems.setShoes(LeatherShoes.makeDefaultLeatherShoes());
+        return new Player(name, 1, 10, new Inventory(), equippedItems);
     }
 
     public String getName() {

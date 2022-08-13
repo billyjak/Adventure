@@ -1,20 +1,11 @@
 package main.com.adventure.items.attire.legs;
 
 import main.com.adventure.items.Item;
+import main.com.adventure.items.attire.ArmorPiece;
 
-public abstract class Legs extends Item {
-    private Integer armorRating;
-
-    public Legs(Integer value, Integer weight, Integer armorRating) {
-        super(value, weight);
-        this.armorRating = armorRating;
+public abstract class Legs extends ArmorPiece {
+    public Legs(Integer value, Integer weight, Double durability, Double condition, Integer armorRating) {
+        super(value, weight, durability, condition, armorRating);
     }
 
-    public Integer getArmorRating() {
-        return armorRating;
-    }
-
-    public void setArmorRating(Integer armorRating) {
-        this.armorRating = armorRating;
-    }
 }
