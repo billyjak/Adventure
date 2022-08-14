@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TextAdventure.iml" filepath="$PROJECT_DIR$/TextAdventure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TextAdventure.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TextAdventure.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/TextAdventure.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TextAdventure.test.iml" />
     </modules>
   </component>
